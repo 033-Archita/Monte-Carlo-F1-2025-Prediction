@@ -6,6 +6,9 @@ import plotly.graph_objects as go
 from PIL import Image
 import time
 import ast # For parsing list strings from CSV
+import os, streamlit as st
+st.write("Current working directory:", os.getcwd())
+st.write(" Files in current directory:", os.listdir())
 
 # --- 1. APP CONFIGURATION ---
 
@@ -637,4 +640,5 @@ def main():
             """)
 
 if __name__ == "__main__":
+
     main()
